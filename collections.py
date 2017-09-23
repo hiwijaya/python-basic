@@ -56,3 +56,11 @@ student = {
     'cool': True
 }
 print(student)
+
+# accessing element of dict --> or student['name']
+student_name = student.get('name')
+print(student_name)
+
+# change value element of dict
+student['name'] = 'Solomon Grundy'
+print(student)
