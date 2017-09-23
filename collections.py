@@ -53,13 +53,24 @@ del alot_rooms
 student = {
     'name': 'Happy Indra Wijaya',
     'age': 25,
-    'cool': True
+    'cool': True,
+    'language': ['Java', 'Python', 'SQL'],
+    'family': {
+        'dad': 'Indra Permana',
+        'mom': 'Raedah',
+        'sister': 'Putri Rizkia',
+        'brother': 'Martin Tri Bintang Pamungkas'
+    }
 }
 print(student)
 
 # accessing element of dict --> or student['name']
 student_name = student.get('name')
 print(student_name)
+student_lang = student['language']
+student_brother = student.get('family')['brother']
+print(student_lang)
+print(student_brother)
 
 # change value element of dict
 student['name'] = 'Solomon Grundy'
