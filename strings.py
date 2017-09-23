@@ -28,3 +28,5 @@ print(name[:4])
 # get length of element string
 print(len(name))
 
+# print string with a number type use comma
+print('hiwijaya', 1992, 10)
