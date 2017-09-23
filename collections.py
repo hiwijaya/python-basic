@@ -1,5 +1,5 @@
 # LIST ----------------------------------
-# List is a sequence data structure with index position. Similar with array in Java
+# List is a sequence data structure with index position. Similar with Array in Java
 players = [10, 23, 24, 41]
 
 # get list item with index
@@ -45,4 +45,14 @@ print(alot_rooms)
 
 # remove individual tuple element is not possible, but you can remove an entire tuple
 del alot_rooms
-print(alot_rooms)   # got NameError
+# print(alot_rooms)   # got NameError
+
+
+# DICTIONARY ----------------------------------
+# Data structure with key-value system. Similar with Map in Java.
+student = {
+    'name': 'Happy Indra Wijaya',
+    'age': 25,
+    'cool': True
+}
+print(student)
