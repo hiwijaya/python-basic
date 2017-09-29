@@ -75,3 +75,14 @@ print(student_brother)
 # change value element of dict
 student['name'] = 'Solomon Grundy'
 print(student)
+
+
+# SETS ----------------------------------
+# UNORDERED collections of UNIQUE elements
+foods = {'burger', 'pizza', 'soup', 'burger', 'milk'}
+print(foods)
+
+if'soup' in foods:
+    print('I got a free chicken soup')
+else:
+    print('404, soup not found.');
