@@ -36,10 +36,17 @@ dumb_sentence(action='cook')
 dumb_sentence(item='sandwich', action='cook')
 
 
-# flexible number if arguments
+# flexible number of arguments
 def add_numbers(*args):
     total = 0
     for i in args:
         total += i
     print('Total: ', total)
 add_numbers(1, 2, 3, 4, 5, 6)
+
+
+# unpacking arguments
+def formula(height, width, depth):
+    print(height * width * depth)
+input_1 = [10, 5, 4]
+formula(*input_1)
