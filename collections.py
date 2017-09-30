@@ -76,6 +76,17 @@ print(student_brother)
 student['name'] = 'Solomon Grundy'
 print(student)
 
+# for loop
+for key, val in student.items():
+    print(key)
+
+    if type(val) is dict:
+        for k, v in val.items():
+            print(k)
+            print(v)
+    else:
+        print(val)
+
 
 # SETS ----------------------------------
 # UNORDERED collections of UNIQUE elements
@@ -85,4 +96,4 @@ print(foods)
 if'soup' in foods:
     print('I got a free chicken soup')
 else:
-    print('404, soup not found.');
+    print('404, soup not found.')
