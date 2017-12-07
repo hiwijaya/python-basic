@@ -1,5 +1,4 @@
 age = 25
-
 if age < 21:
     print('No beer for you!')
 else:
@@ -24,9 +23,9 @@ print(drink)
 # '==' for VALUE EQUALITY.
 a = 5000
 b = 5000
-print(a is 500 * 10)
-print(a == 500 * 10)
-print(a is b)
+print(a is 500 * 10)  # --> False
+print(a == 500 * 10)  # --> True
+print(a is b)         # --> True
 
 
 

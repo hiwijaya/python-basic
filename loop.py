@@ -1,13 +1,17 @@
 # while
-count = 1
-while count < 10:
-    print('count again!')
-    count += 1
+find = True
+num = 0
+while find:
+    print(num)
+    if num is 7:    # lucky number!
+        find = False
+        break
+    num += 1
 
 # loop n times with range()
-for n in range(10):
+for n in range(10):         # range(end)
     print(n)
-for n in range(1, 5):
+for n in range(1, 5):       # range(start, end)
     print(n)
 for n in range(1, 20, 5):   # range(start, end, increment)
     print(n)

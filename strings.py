@@ -1,3 +1,9 @@
+word = 'word'
+sentence = "This is sentence."
+paragraph = '''You can use triple quotes
+to make multiple lines.'''
+
+
 # Use \ to ignore quotes inside quotes
 a = 'I don\'t think so'
 print(a)
