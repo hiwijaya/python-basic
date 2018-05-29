@@ -65,9 +65,9 @@ student = {
 print(student)
 
 # accessing element of dict --> or student['name']
-student_name = student.get('name')
+student_name = student.get('name')      # return None if key doesn't exist
 print(student_name)
-student_lang = student['language']
+student_lang = student['language']      # KeyError is key doesn't exist
 student_brother = student.get('family')['brother']
 print(student_lang)
 print(student_brother)
