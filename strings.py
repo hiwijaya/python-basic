@@ -8,6 +8,11 @@ to make multiple lines.'''
 a = 'I don\'t think so'
 print(a)
 
+# f --> formatting string
+name = 'happy'
+hi_happy = f'hi {name}'
+print(hi_happy)
+
 # r --> raw string
 b = r'D:\hiwijaya\homework\nudePics'
 print(b)

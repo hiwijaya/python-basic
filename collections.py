@@ -91,6 +91,9 @@ for key, val in student.items():
 # SETS ----------------------------------
 # UNORDERED collections of UNIQUE elements
 foods = {'burger', 'pizza', 'soup', 'burger', 'milk'}
+foods.add('coffee')
+foods.update(['sandwich', 'ice cream'])
+print(foods.pop())  # remove 1 element / use remove() or discard()
 print(foods)
 
 if'soup' in foods:
