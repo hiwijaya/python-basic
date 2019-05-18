@@ -33,9 +33,20 @@ print('Now:', t)
 print('Next hour:', (now + timedelta(hours=1)).time())
 
 
-# Timezone -------------
+# Timezone with Pendulum-------------
+print('\n')
 import pendulum     # https://pendulum.eustace.io/
 
 DEFAULT_TIMEZONE = 'UTC'    # GMT+0
 
-print('Now:', pendulum.now(DEFAULT_TIMEZONE))
+local_datetime = pendulum.now()
+utc = pendulum.now('UTC')
+print('Local datetime:', local_datetime)
+print('Time in UTC:', utc)
+
+init_dt = pendulum.datetime(1992, 7, 10, tz='America/Chicago')
+print('Init datetime:', init_dt)
+
+print('Get local timezone:', local_datetime.timezone_name)
+print('Difference from UTC:', local_datetime.offset_hours)  # if Asia/Jakarta(UTC+7) return 7.0
+print('Is local timezone?', init_dt.is_local())
