@@ -1,5 +1,5 @@
 
-def my_gen(n):
+def my_generator(n):
 
     print('FIRST')
     yield n
@@ -11,7 +11,7 @@ def my_gen(n):
     yield n + 2
 
 
-g = my_gen(1)
+g = my_generator(1)
 print(next(g))
 print(next(g))
 print(next(g))
