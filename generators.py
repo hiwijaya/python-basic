@@ -1,5 +1,4 @@
 
-
 def my_gen(n):
 
     print('FIRST')
@@ -12,7 +11,7 @@ def my_gen(n):
     yield n + 2
 
 
-g = my_gen(5)
+g = my_gen(1)
 print(next(g))
 print(next(g))
 print(next(g))

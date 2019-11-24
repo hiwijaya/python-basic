@@ -1,4 +1,6 @@
 
+
+# Iterables
 class Counter:
 
     def __init__(self, low, high):
@@ -6,7 +8,7 @@ class Counter:
         self.high = high
 
     def __iter__(self):
-        print('iter')
+        print('__iter__ called')
         return self
 
     def __next__(self):
@@ -20,10 +22,18 @@ class Counter:
 counter = Counter(1, 10)
 print(next(counter))
 print(next(counter))
-print('-----')
 
 for c in counter:
     print(c)
 
-for c in counter:
-    print(c)
+
+# Iterables to Generator
+def generator(low, high):
+    current = low - 1
+    while current < high:
+        current += 1
+        yield current
+
+
+for g in generator(1, 5):
+    print(g)
