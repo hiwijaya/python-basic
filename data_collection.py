@@ -29,6 +29,10 @@ print(best_players)
 players[:2] = []
 print(players)
 
+# list comprehension
+even = [x*2 for x in range(1, 10)]
+print(even)
+
 
 # TUPLE ----------------------------------
 # Like list but immutable. It mean the tuples cannot be changed.
